@@ -31,6 +31,22 @@
 $ npm install
 ```
 
+## Run the project
+
+```bash
+# to run the mongodb server on docker engine
+$ docker compose up
+
+# starting logging service with port 3001
+$ nest start logging --watch
+
+# starting rider microservice
+$ nest start rider --watch
+
+# Try APIs in rest.http
+```
+
+<!-- 
 ## Compile and run the project
 
 ```bash
@@ -55,7 +71,7 @@ $ npm run test:e2e
 
 # test coverage
 $ npm run test:cov
-```
+``` -->
 
 ## Deployment
 
