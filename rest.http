@@ -1,7 +1,7 @@
-## GET RIDER COORDINATES
-GET http://localhost:3001/rider-coordinates
+# GET RIDER COORDINATES
+GET http://localhost:3001/rider-coordinates/dklfsdlitelsfldsjfksdlk
 
-## POST RIDER COORDINATES
+# POST RIDER COORDINATES
 POST http://localhost:3001/rider-coordinates
 Content-Type: application/json
 

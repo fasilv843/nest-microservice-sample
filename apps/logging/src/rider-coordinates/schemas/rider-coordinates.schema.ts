@@ -1,8 +1,8 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { HydratedDocument } from "mongoose";
 
-@Schema()
-class RiderCoordinate {
+@Schema({ collection: 'ridercoordinates' })
+export class RiderCoordinate {
     @Prop({ required: true })
     lat: number;
 
@@ -16,4 +16,5 @@ class RiderCoordinate {
 
 export const RiderCoordinateSchema = SchemaFactory.createForClass(RiderCoordinate)
 
-export type RiderCoordinateDocument = HydratedDocument<typeof RiderCoordinateSchema>;
+// export type RiderCoordinateDocument = HydratedDocument<typeof RiderCoordinateSchema>;
+export type RiderCoordinateDocument = HydratedDocument<RiderCoordinate>;
